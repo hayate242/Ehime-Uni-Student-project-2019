@@ -1,0 +1,21 @@
+https://qiita.com/yo_dazy/items/e14464367ec8d4a26b6a
+
+
+mkdir /Storeaming
+git clone https://github.com/arut/nginx-rtmp-module.git
+
+cd /Storeaming
+wget http://nginx.org/download/nginx-1.12.2.tar.gz
+tar zxf nginx-1.12.2.tar.gz
+rm -rf nginx-1.12.2.tar.gz
+
+cd /Storeaming/nginx-1.12.2/
+./configure --add-module=/Storeaming/nginx-rtmp-module
+make
+make install
+
+
+）動画ファイルを変換
+yum install -y ffmpeg
+cd /usr/local/nginx/html/movie/
+
