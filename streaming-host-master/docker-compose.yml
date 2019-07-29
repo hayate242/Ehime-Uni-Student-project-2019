@@ -12,3 +12,4 @@ services:
       - 5000:5000
     volumes:
       - ./video/clouds_over_the_mountain_hd_stock_video.mp4.mp4:/var/container/data/broadcast_source.mp4
+      - ./src/:/var/container/src

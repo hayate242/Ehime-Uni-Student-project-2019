@@ -15,3 +15,7 @@ systemctl list-unit-files -t service | grep -e nginx -e php-fpm
 エラーログの確認
 tail -f /var/log/nginx/error.log
 ls -l /var/run/php-fpm/php-fpm.sock
+
+# streaming-host-master
+http://localhost/hls/live.m3u8
+http://localhost/hls/broadcast.m3u8
